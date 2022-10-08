@@ -86,7 +86,34 @@ Haz el mismo ejercicio anterior con un bucle for.*/
 Muestra los números del 1 al 100 (ambos incluidos) divisibles entre 2 y 3. Utiliza
 el bucle que desees.*/
 
-if 
-for (i=0; i <= 100; i++) {
-    console.log(i);
-}
+        // for (i=0; i <= 100; i++) {
+        //     if([i] % 2 === 0) {
+        //         console.log([i] + " es divisible entre 2")
+        //     }
+        //     if([i] % 3 === 0) {
+        //         console.log([i] + " es divisible entre 3")
+        //     }
+        // }
+
+/* 10th Exercise 
+Realiza una aplicación que nos pida un número de ventas a introducir, después
+nos pedirá tantas ventas por teclado como número de ventas se hayan indicado.
+Al final mostrara la suma de todas las ventas. Piensa que es lo que se repite y lo
+que no.*/
+
+function sumInput() {
+    let numbers = [];
+      let numVentas = parseInt(prompt("Dime cuantas ventas se han realizado"))
+      for (let i = 0; i <= numVentas -1; i++) {
+      let PrecioVentas = prompt("Cual ha sido el precio de venta?");
+      numbers.push(+PrecioVentas);
+    }
+  
+    let sum = 0;
+    for (let number of numbers) {
+      sum += number;
+    }
+    return sum;
+  }
+  
+  alert( sumInput() );
