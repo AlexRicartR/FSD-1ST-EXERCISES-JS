@@ -101,19 +101,63 @@ nos pedirá tantas ventas por teclado como número de ventas se hayan indicado.
 Al final mostrara la suma de todas las ventas. Piensa que es lo que se repite y lo
 que no.*/
 
-function sumInput() {
-    let numbers = [];
-      let numVentas = parseInt(prompt("Dime cuantas ventas se han realizado"))
-      for (let i = 0; i <= numVentas -1; i++) {
-      let PrecioVentas = prompt("Cual ha sido el precio de venta?");
-      numbers.push(+PrecioVentas);
-    }
-  
-    let sum = 0;
-    for (let number of numbers) {
-      sum += number;
-    }
-    return sum;
-  }
-  
-  alert( sumInput() );
+        // function sumInput() {
+        // let numbers = [];
+        // let numVentas = parseInt(prompt("Dime cuantas ventas se han realizado"))
+        // for (let i = 0; i <= numVentas -1; i++) {
+        // let PrecioVentas = prompt("Cual ha sido el precio de venta?");
+        // numbers.push(+PrecioVentas);
+        // }
+        
+        // let sum = 0;
+        // for (let number of numbers) {
+        // sum += number;
+        // }
+        // return sum;
+        // }
+        
+        // alert( sumInput() );
+
+/* 11th Exercise 
+Crea una aplicación que nos pida un día de la semana y que nos diga si es un día
+laboral o no. Usa un switch para ello. */
+
+
+        // let diaUsuario = prompt("Que dia es?").toLowerCase()
+        // switch (diaUsuario) {
+        //   case "sabado":
+        //   case "domingo":
+        //     alert("Es festivo");
+        //   break;
+        //   case "lunes":
+        //   case "martes":
+        //   case "miercoles":
+        //   case "jueves":
+        //   case "viernes":
+        //     alert("Es laborable");
+        //   break;
+        //   default:
+        //     alert("El dia introducido no es correcto");
+        // }
+
+/* 12th Exercise 
+Escribe una aplicación con un String que contenga una contraseña cualquiera.
+Después se te pedirá que introduzcas la contraseña, con 3 intentos. Cuando
+aciertes ya no pedirá más la contraseña y mostrará un mensaje diciendo
+“Enhorabuena”. Piensa bien en la condición de salida (3 intentos y si acierta sale,
+aunque le queden intentos). */
+
+
+        // let correct = "doscientosmangos";
+        // let i=0;
+        // while(i < 3){
+        //         let pass = prompt("Insert password").toLowerCase();
+        //         if ( pass == correct){
+        //                 alert("Correct password");
+        //                 break
+        //         }
+        //         else{
+        //                 alert("Password failed");
+        //                 i++
+        //         }
+        // }
